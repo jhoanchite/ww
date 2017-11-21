@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+body{
+    margin: 0;
+    padding: 0;
+    background:#F8F8F8;
+    color: #4f585e;
+    font-family: Roboto;
+}
+header{
+    width: 100%;
+    background: #fff;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    /*0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)*/
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    
+
+}
+.form-control{
+    width: 100%;
+}
+.portadas{
+    width: 100%;
+}
+.portadas img{
+    width: 100%;
+    
+}.portadas .cover:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 100%);
+}
+
+.portadas article{
+    width: 33.333333%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    height: 17em;
+    
+}
+.portadas article a{
+    bottom: 0;
+    position: absolute;
+    padding: 0.4em 2em;
+    
+    
+    
+    
+}
+.portadas article .text{
+    padding: .2em;
+    color: #FFFFFF;
+    top: 11em;
+    position: absolute;
+    height: 6em;
+    overflow: hidden;
+    line-height: 1.2;
+    padding: .5em;
+    background: 0 rgba(0,0,0,0.3);
+    width: 100%;
+    text-align: center;
+    transform: translateY(63%);
+    transition: all 0.5s
+}
+.portadas article:hover .text{
+    transform: translateY(0%);
+}
+.portadas article:hover .text span{
+    
+}
+ .portadas article:hover img{
+     transform: rotate(360deg);
+    transform: scale(1.1);
+    transition: all 0.6s;
+     
+}
+.portadas article .text h1{
+    font-size: 1em;
+    
+}
+.portadas article .text p{
+    font-size: .9em;
+}
+.portadas article .text .icon-circle-up{
+    font-size: 1.8em;
+}
+.logo{
+     
+   
+}
+.row{
+    padding: 0.5em 1em;
+}
+.logo ,.icons{
+    height: 2.6em;
+    padding: 0.5em 1em;
+    align-items: center;
+   
+    
+}
+.icons{,
+    margin-top: 1em;
+    
+    
+}
+.icons span{
+    padding:1em;
+    transition: all .4s;
+}
+.icons .icon-facebook:hover{
+    color:#3b5998; 
+    cursor: pointer;
+}
+
+nav{
+  clear: both;
+  width: 100%;
+  
+    
+   
+}
+
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li{
+    float: none; 
+    width: 100%;
+    background:#fff;
+}
+
+nav li a{
+  display: block; 
+  width: 100%; 
+  padding: 20px; 
+  border-left: 5px solid; 
+  position: relative; 
+  z-index: 2;
+  text-decoration: none;
+  color: #444;
+  box-sizing: border-box;  
+  -moz-box-sizing: border-box;  
+  -webkit-box-sizing: border-box; 
+}
+
+nav li a:hover{ border-bottom: 0px; color: #fff !important;}
+nav li:first-child  a{ border-left: 10px solid #3498db; }
+nav li:nth-child(2) a{ border-left: 10px solid #ffd071; }
+nav li:nth-child(3) a{ border-left: 10px solid #f0776c; }
+nav li:nth-child(4) a{ border-left: 10px solid #673AB7; }
+nav li:nth-child(5) a{ border-left: 10px solid #3F51B5; }
+nav li:nth-child(6) a{ border-left: 10px solid #f0776c; }
+nav li:nth-child(7) a{ border-left: 10px solid #f0776c; }
+nav li:nth-child(8) a{ border-left: 10px solid #f0776c; }
+nav li:nth-child(9) a{ border-left: 10px solid #f0776c; }
+nav li:last-child   a{ border-left: 10px solid #1abc9c; }
+
+nav li a:after { 
+  content: "";
+  height: 100%; 
+  left: 0; 
+  top: 0; 
+  width: 0px;  
+  position: absolute; 
+  transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s; 
+  z-index: -1;
+}
+
+nav li a:hover:after{ width: 100%; }
+nav li:first-child  a:after{ background: #3498db; }
+nav li:nth-child(2) a:after{ background: #ffd071; }
+nav li:nth-child(3) a:after{ background: #f0776c; }
+nav li:nth-child(4) a:after{ background: #673AB7; }
+nav li:nth-child(5) a:after{ background: #3F51B5; }
+nav li:nth-child(6) a:after{ background: #f0776c; }
+nav li:nth-child(7) a:after{ background: #f0776c; }
+nav li:nth-child(8) a:after{ background: #f0776c; }
+nav li:nth-child(9) a:after{ background: #f0776c; }
+nav li:last-child   a:after{ background: #1abc9c; }
+
+
+@media (max-width: 575px) {
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+    .logo,.icons{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        
+            
+    }
+    
+    .icons span{
+        transition: all .4s;
+        
+       
+    }
+    .icons .icon-facebook:hover{
+        color:#3b5998; 
+        cursor: pointer;
+    }
+    .navbar-toggler {
+        width: 100%;
+    }
+    .portadas img{
+        height: 20em;
+    }
+    .portadas article{
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 14em;
+    }
+    .portadas article .text{
+    padding: .2em;
+    color: #FFFFFF;
+    top: 8.5em;
+    overflow: hidden;
+    position: absolute;
+    height: 5.6em;
+        
+    
+}
+    
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .logo{
+        padding: 0.5em 0.5em 0.5em 0.5em
+    }
+    .icons span{
+        padding:1.3em;
+        margin-top:0;
+    }
+    .navbar-toggler {
+        width: 100%;
+        margin-top: 2em;
+    }
+    .portadas article{
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 14em;
+    }
+    .portadas article .text{
+    padding: .2em;
+    color: #FFFFFF;
+    top: 8.5em;
+    overflow: hidden;
+    position: absolute;
+    height: 5.6em;
+        
+    
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+        .portadas article{
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 14em;
+    }
+    .portadas article .text{
+    padding: .2em;
+    color: #FFFFFF;
+    top: 8.5em;
+    overflow: hidden;
+    position: absolute;
+    height: 5.6em;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+@media (min-width: 1200px) {}
