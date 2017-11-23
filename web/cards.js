@@ -1,19 +1,19 @@
-$(document).ready(function(){
-  var zindex = 10;
+$( document ) .ready( function() {
+    var zindex = 10;
   
-  $("div.card").click(function(e){
+  $( "div.card" ) .click( function(e) {
     e.preventDefault();
 
     var isShowing = false;
 
-    if ($(this).hasClass("show")) {
+    if ( $( this ) .hasClass( "show" ) ) {
       isShowing = true
     }
 
-    if ($("div.cards").hasClass("showing")) {
+    if ( $( "div.cards" ) .hasClass( "showing" ) ) {
       // a card is already in view
-      $("div.card.show")
-        .removeClass("show");
+      $( "div.card.show" )
+        .removeClass( "show" );
 
       if (isShowing) {
         // this card was showing - reset the grid
@@ -25,9 +25,7 @@ $(document).ready(function(){
           .css({zIndex: zindex})
           .addClass("show");
 
-      }
-
-      zindex++;
+      }zindex++;
 
     } else {
       // no cards in view
