@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animate.css">
     
     <title>Web de noticias </title>
 </head>
@@ -21,38 +22,48 @@
                 <span class="icon-facebook"></span>
                 <span class="icon-twitter"></span>
                 <span class="icon-android"></span>
-                <span class="icon-whatsapp"></span>
+                <span class="icon-pinterest2"></span>
              </div>
         </div>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light" >
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
+                    <li class=" active">
                         <a class="nav-link" href="#">INICIO</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="clos">
                         <a class="nav-link" href="#">NOTICIAS</a>
+                        <ul class="dw">
+                          <li><a class="nav-link" href="">LOCALES</a></li>
+                          <li><a class="nav-link" href="">NACIONALESLES</a></li>
+                          <li><a class="nav-link" href="">INTERNACIONALES</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="#">DEPONTES</a>
+                        <ul class="dw">
+                          <li><a class="nav-link" href="#">FUTBOL</a></li>
+                          <li><a class="nav-link" href="#">VOLEY</a></li>
+                          <li><a class="nav-link" href="#">INTERNACIONALES</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="#">SALUD</a>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="#">TECNOLOGIA</a>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="#">MUSICA</a>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="#">TURISMO</a>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="#">CONTACTO</a>
                     </li>
                 </ul>
@@ -128,21 +139,89 @@
        </div>
        <div class="row">
             <section class="col-sm-12 col-md-8 col-lg-8  col-xl-8">
-                NM,
+                <div class="utitle">
+                    <h4>Ultimas noticias</h4>
+                </div>
+                
+                <div class="articles">
+                    <article >
+                        <img src="img/sd.jpg" alt="" class="img">
+                        <div class="cat">
+                               VIRALES
+                        </div>
+                        <div class="share">
+                        <div class="sociallink">
+                               <a href="#share"><span class="icon-share2"></span></a>
+                        </div>
+                        <div class="sociallinks">
+                            <a href="#facebook"><span class="icon-facebook"></span></a>
+                            <a href="#twitter"><span class="icon-twitter"></span></a>
+                            <a href="#googleplus"><span class="icon-google-plus"></span></a>
+                            <a href="#pinterest"><span class="icon-pinterest2"></span></a>
+                        </div>
+                        </div>
+                        <div class="txt">
+                            <div class="date">
+                               Publicado el 20/03/2017 
+                            </div>
+                            <h1>Así fue la presentación de Chyno Miranda en Premios La Zona 2017</h1>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img src="img/sd.jpg" alt="" class="img">
+                        <div class="txt">
+                            <h1>Titulo de articulo</h1>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img src="img/sd.jpg" alt="" class="img">
+                        <div class="txt">
+                            <h1>Titulo de articulo</h1>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img src="img/sd.jpg" alt="" class="img">
+                        <div class="txt">
+                            <h1>Titulo de articulo</h1>
+                        </div>
+                    </article>
+                   <article class="item">
+                        <img src="img/sd.jpg" alt="" class="img">
+                        <div class="txt">
+                            <h1>Titulo de articulo</h1>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img src="img/sd.jpg" alt="" class="img">
+                        <div class="txt">
+                            <h1>Titulo de articulo</h1>
+                        </div>
+                    </article>
+                </div>
             </section>
             <section class="col-sm-12 col-md-4 col-lg-4  col-xl-4">
-                NM,
+              <div class="utitle">
+                    <h4>Redes Sociales</h4>
+              </div>
             </section>
        </div>
         
     </div>
     
     <!--JS--->
-    
+   
     <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/app.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+     <script>
+$(document).ready(function(){
+	$('.articles').masonry();
     
+});
+
+
+    </script>
 </body>
 </html>

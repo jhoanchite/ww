@@ -1,3 +1,4 @@
+
 var navBar = $ ('.navbar');
 navBar.append('<li class="marker"></li>');
 navBar.on("click" , "a" ,function() {
@@ -7,13 +8,28 @@ navBar.on("click" , "a" ,function() {
     var nx = $(".navbar").offset();
     var lx = $(this).parent('li').offset();
     var left = lx.left - nx.left;
-    
    navBar.find('li').removeClass('active');
-  
+   
    $(this).parent().addClass('active');
-  
     marker.removeClass("anim").css({"width" : mrkWidth , "left" : left });
     setTimeout(function() { 
     marker.addClass("anim")
     },200); 
-}); 
+});
+
+
+$('.sociallink').click(function(){
+    $('.sociallinks').toggleClass('ver animated bounce');
+});
+$('.navbar-toggler').click(function(){
+    $('.navbar-collapse').toggleClass('collapse');
+    $(".collapse").slideToggle();
+    
+});
+
+
+
+
+
+
+
